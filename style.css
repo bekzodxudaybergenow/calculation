@@ -1,0 +1,102 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.calculation {
+    max-width: 300px;
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+    padding: 50px 30px !important;
+    overflow: hidden;
+    box-shadow: 0 0 20px 5px rgba(0, 0, 0, .1);
+    position: relative;
+}
+.calculation-row {
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+}
+.values {
+    display: flex;
+    flex-direction: column;
+    row-gap: 4px;
+}
+.btn-list {
+    display: grid;
+    grid-template-columns: repeat(4, 68px);
+    grid-template-rows: repeat(4, 50px);
+    column-gap: 8px;
+
+    & .backspaceBtn {
+        grid-row: 1 / 2;
+        grid-column: 4 / 5;
+    }
+    & .percent {
+        grid-row: 1 / 2;
+        grid-column: 2 / 3;
+        font-size: 16px;
+    }
+    & .division {
+        grid-row: 1 / 2;
+        grid-column: 3 / 4;
+    }
+    & .addition {
+        padding-top: 8px;
+        grid-row: 2 / 3;
+        grid-column: 4 / 5;
+    }
+    & .add {
+        grid-row: 3 / 4;
+        grid-column: 4 / 5;
+    }
+    & .subtr {
+        grid-row: 4 / 5;
+        grid-column: 4 / 5;
+    }
+}
+.numbers {
+    display: flex;
+    column-gap: 8px;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 50px;
+    max-width: 220px;
+    row-gap: 10px;
+}
+.num {
+    width: 68px;
+}
+.equal {
+    position: absolute;
+    right: 32px;
+    width: 222px;
+}
+.process {
+    display: inline-block;
+    text-align: right;
+    line-height: 40px;
+    padding: 0 8px;
+    max-width: 100%;
+    height: 40px;
+    border-radius: 2px;
+    margin-bottom: 20px;
+    text-align: right;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, .1);
+}
+.btn {
+    min-width: 40px;
+    height: 40px;
+    border: none;
+    font-size: 18px;
+    border-radius: 2px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: rgba(0, 0, 0, .1);
+    }
+}
