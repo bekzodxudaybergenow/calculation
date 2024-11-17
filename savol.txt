@@ -1,0 +1,5 @@
+Kichik kalkulyator yasash
+
+ikki input va 4 ta amal uchun button bor
+
+ikki inputga raqam kiritib biror amalni tanlasa shu amal buyicha sonni qo'shish , ayirish , bo'lish , va ko'paytirishi mumkin . = tenglik uchun ham button berib quyiladi .
